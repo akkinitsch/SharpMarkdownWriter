@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMarkdownWriterLibTest", "SharpMarkdownWriterTest\SharpMarkdownWriterLibTest.csproj", "{DAE699D8-CD6C-4F1F-9CA1-42C07C86B70D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpMarkdownWriterLib", "SharpMarkdownWriterLib\SharpMarkdownWriterLib.csproj", "{E47FBD06-DA7B-44A1-B389-480BA8E18FFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAE699D8-CD6C-4F1F-9CA1-42C07C86B70D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DAE699D8-CD6C-4F1F-9CA1-42C07C86B70D}.Debug|x86.Build.0 = Debug|Any CPU
+		{DAE699D8-CD6C-4F1F-9CA1-42C07C86B70D}.Release|x86.ActiveCfg = Release|Any CPU
+		{DAE699D8-CD6C-4F1F-9CA1-42C07C86B70D}.Release|x86.Build.0 = Release|Any CPU
+		{E47FBD06-DA7B-44A1-B389-480BA8E18FFF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E47FBD06-DA7B-44A1-B389-480BA8E18FFF}.Debug|x86.Build.0 = Debug|Any CPU
+		{E47FBD06-DA7B-44A1-B389-480BA8E18FFF}.Release|x86.ActiveCfg = Release|Any CPU
+		{E47FBD06-DA7B-44A1-B389-480BA8E18FFF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.AnonymousMethodBraceStyle = NextLine
+		$2.PropertyGetBraceStyle = NextLine
+		$2.PropertySetBraceStyle = NextLine
+		$2.EventBraceStyle = NextLine
+		$2.EventAddBraceStyle = NextLine
+		$2.EventRemoveBraceStyle = NextLine
+		$2.StatementBraceStyle = NextLine
+		$2.AfterDelegateDeclarationParameterComma = True
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabsToSpaces = False
+		$3.inheritsSet = VisualStudio
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+EndGlobal
