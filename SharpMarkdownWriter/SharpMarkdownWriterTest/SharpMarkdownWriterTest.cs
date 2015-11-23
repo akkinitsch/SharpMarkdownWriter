@@ -40,7 +40,7 @@ namespace SharpMarkdownWriterLibTest
 			contentList.Add (contentList1);
 			contentList.Add (contentList2);
 			SharpMarkdownWriterLib.SharpMarkdownWriter writer = new SharpMarkdownWriterLib.SharpMarkdownWriter ("test.md");
-			writer.Table (headerList, contentList);
+			writer.Table (headerList, "lcr", contentList);
 			writer.Save ();
 		}
 

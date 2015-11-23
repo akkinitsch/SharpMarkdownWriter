@@ -64,10 +64,14 @@ namespace SharpMarkdownWriterLibTest
 		public void getResultFromTable_GenerateHeadingAndContent_ReturnsWholeTable()
 		{
 			SharpMarkdownWriterLib.SharpMarkdownWriterTable writerTable = new SharpMarkdownWriterLib.SharpMarkdownWriterTable(headerList, contentList);
-			string header = writerTable.BuildHeader (headerList);
-			string content = writerTable.BuildContent (contentList);
-			string result = header + content;
-			StringAssert.AreEqualIgnoringCase ("|heading1|heading2|heading3|\n|--------|--------|--------|\n|cell11|cell12|cell13|\n|cell21|cell22|cell23|\n", result);
+			StringAssert.AreEqualIgnoringCase ("|heading1|heading2|heading3|\n|--------|--------|--------|\n|cell11|cell12|cell13|\n|cell21|cell22|cell23|\n", writerTable.ToString());
+		}
+
+		[Test]
+		public void getResultFromTable_GenerateHeadingAndContentWithAlignment_ReturnsWholeTable()
+		{	string alignment = "lcr";
+			SharpMarkdownWriterLib.SharpMarkdownWriterTable writerTable = new SharpMarkdownWriterLib.SharpMarkdownWriterTable(headerList, alignment, contentList);
+			StringAssert.AreEqualIgnoringCase ("|heading1|heading2|heading3|\n|--------|:------:|-------:|\n|cell11|cell12|cell13|\n|cell21|cell22|cell23|\n", writerTable.ToString());
 		}
 	}
 }
