@@ -20,7 +20,7 @@ namespace SharpMarkdownWriterLib
 			this.numberOfRows = headings.Count;
 			stringBuilder = new StringBuilder ();
 			stringBuilder.Append(BuildHeader (headings));
-
+			stringBuilder.Append (BuildContent (content));
 		}
 
 		public string BuildHeader(List<string> headings)
