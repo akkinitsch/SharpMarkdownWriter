@@ -32,6 +32,13 @@ namespace SharpMarkdownWriterLib
 			list.add(builder);
 		}
 
+	    public void Paragraph(string text)
+	    {
+	        builder = new StringBuilder();
+	        builder.AppendLine(text);
+            list.add(builder);
+	    }
+
 		public void Table(System.Collections.Generic.List<string> headings, System.Collections.Generic.List<System.Collections.Generic.List<string>> content)
 		{
 			list.add (new SharpMarkdownWriterTable(headings, content));
