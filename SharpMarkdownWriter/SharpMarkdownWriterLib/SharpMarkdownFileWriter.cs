@@ -9,14 +9,14 @@ namespace SharpMarkdownWriterLib
 
 		public SharpMarkdownFileWriter (string fileName)
 		{
-			this.outputFile = fileName;
+			outputFile = fileName;
 		}
 
 		public bool saveMarkdownDocument(string text)
 		{
 			try
 			{
-				System.IO.TextWriter writeFile = new StreamWriter(this.outputFile);
+				TextWriter writeFile = new StreamWriter(outputFile);
 				writeFile.Write(text);
 				writeFile.Flush();
 				writeFile.Close();
@@ -26,7 +26,7 @@ namespace SharpMarkdownWriterLib
 			{
 				return false;
 			}
-			catch(System.UnauthorizedAccessException)
+			catch(UnauthorizedAccessException)
 			{
 				return false;
 			}

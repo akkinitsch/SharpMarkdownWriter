@@ -1,9 +1,9 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace SharpMarkdownWriterLibTest
+namespace SharpMarkdownWriterTest
 {
-	[TestFixture()]
+	[TestFixture]
 	public class SharpMarkdownWriterTableTest
 	{
 		List<string> headerList;
@@ -31,7 +31,7 @@ namespace SharpMarkdownWriterLibTest
 			contentList.Add (contentList2);
 		}
 
-		[Test()]
+		[Test]
 		public void BuildHeader_GenerateHeadingWithoutFormating_ReturnsTableHeader()
 		{
 			SharpMarkdownWriterLib.SharpMarkdownWriterTable writerTable = new SharpMarkdownWriterLib.SharpMarkdownWriterTable(headerList, contentList);
@@ -50,8 +50,8 @@ namespace SharpMarkdownWriterLibTest
 		[Test]
 		public void getResultFromTable_LastRowToShort_ReturnsRowContent()
 		{
-			this.contentList2 = new List<string> ();
-			this.contentList = new List<List<string>> ();
+			contentList2 = new List<string> ();
+			contentList = new List<List<string>> ();
 			contentList2.Add ("cell21");
 			contentList.Add (contentList1);
 			contentList.Add (contentList2);

@@ -14,7 +14,7 @@ namespace SharpMarkdownWriterLib
 
 		public void add(Object o)
 		{
-			this.listElements.Add(o);
+			listElements.Add(o);
 		}
 
 		public int Count()

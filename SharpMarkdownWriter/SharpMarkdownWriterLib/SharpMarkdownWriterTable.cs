@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace SharpMarkdownWriterLib
 {
-	public class SharpMarkdownWriterTable
+	public class SharpMarkdownWriterTable : SharpMarkdownWriterElement
 	{
-		private StringBuilder stringBuilder;
 		private int numberOfRows = 0;
 
 
@@ -17,7 +15,7 @@ namespace SharpMarkdownWriterLib
 
 		public SharpMarkdownWriterTable(List<string> headings, List<List<string>> content)
 		{
-			this.numberOfRows = headings.Count;
+			numberOfRows = headings.Count;
 			stringBuilder = new StringBuilder ();
 			stringBuilder.Append(BuildHeader (headings));
 			stringBuilder.Append (BuildContent (content));
@@ -25,7 +23,7 @@ namespace SharpMarkdownWriterLib
 
 		public SharpMarkdownWriterTable(List<string> headings, string alignment, List<List<string>> content)
 		{
-			this.numberOfRows = headings.Count;
+			numberOfRows = headings.Count;
 			stringBuilder = new StringBuilder ();
 			stringBuilder.Append(BuildHeader (headings, alignment));
 			stringBuilder.Append (BuildContent (content));
@@ -134,11 +132,6 @@ namespace SharpMarkdownWriterLib
 				result.Append("\n");
 			}
 			return result.ToString ();
-		}
-
-		public override string ToString()
-		{
-			return stringBuilder.ToString ();
 		}
 	}
 }

@@ -1,13 +1,13 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace SharpMarkdownWriterLibTest
+namespace SharpMarkdownWriterTest
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class SharpMarkdownWriterTest
 	{
 
-		[Test()]
+		[Test]
 		public void getResultForHeadings_MaximumNumbersHeadingsRequested_ReturnsValidOutput()
 		{
 			SharpMarkdownWriterLib.SharpMarkdownWriter writer = new SharpMarkdownWriterLib.SharpMarkdownWriter ("test.md");
@@ -17,7 +17,7 @@ namespace SharpMarkdownWriterLibTest
 			StringAssert.Contains ("### bar", writer.getResult ());
 		}
 
-		[Test()]
+		[Test]
 		public void getResultFromTable_TableHeadingsAndContentGiven_WritesTableToFile()
 		{
 			List<string> headerList;

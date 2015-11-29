@@ -31,7 +31,7 @@ namespace SharpMarkdownWriterLib
 			builder.Append (" " + text);
 			list.add(builder);
 		}
-
+			
 	    public void Paragraph(string text)
 	    {
 	        builder = new StringBuilder();

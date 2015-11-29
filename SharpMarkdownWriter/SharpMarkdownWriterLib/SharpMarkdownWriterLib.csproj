@@ -36,6 +36,9 @@
     <Compile Include="SharpMarkdownFileWriter.cs" />
     <Compile Include="SharpMarkdownWriterElementList.cs" />
     <Compile Include="SharpMarkdownWriterTable.cs" />
+    <Compile Include="SharpMarkdownWriterElement.cs" />
+    <Compile Include="SharpMarkdownWriterOrderedList.cs" />
+    <Compile Include="SharpMarkdownWriterUnorderedList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

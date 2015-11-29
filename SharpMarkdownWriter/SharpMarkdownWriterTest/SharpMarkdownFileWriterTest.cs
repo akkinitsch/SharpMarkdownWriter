@@ -1,18 +1,18 @@
 ﻿using NUnit.Framework;
 
-namespace SharpMarkdownWriterLibTest
+namespace SharpMarkdownWriterTest
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class SharpMarkdownFileWriterTest
 	{
-		[Test()]
+		[Test]
 		public void saveMarkdownDocument_writeToValidFilePath_ReturnsTrue()
 		{
 			SharpMarkdownWriterLib.SharpMarkdownFileWriter fileWriter = new SharpMarkdownWriterLib.SharpMarkdownFileWriter("test.md");
 			Assert.IsTrue(fileWriter.saveMarkdownDocument("test"));
 		}
 
-		[Test()]
+		[Test]
 		public void saveMarkdownDocument_writeToInvalidFilePath_ReturnsTrue()
 		{
 			SharpMarkdownWriterLib.SharpMarkdownFileWriter fileWriter = new SharpMarkdownWriterLib.SharpMarkdownFileWriter("/");
